@@ -1,61 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Advanced CSS - Assignment 1</title>
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 01 Bootstrap</title>
 
-a[href*="google.com"] {
-    color: green;
-}
-
-a[href*="link-group.eu"] {
-    color: red;
-}
-
- #second-div p:nth-child(odd) {
-    color: blue;
- }
-
- #second-div p:nth-child(even) {
-    color: red;
- }
-
-#first-div > p:nth-of-type(1)::after,
-#first-div > p:nth-of-type(2)::after {
-    content: " - NEW";
-    color: yellow;
-}
-
-p:nth-of-type(10):hover {
-    font-style: italic;
-}
-
-    </style>
-</head>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head> 
 <body>
-    <h1>Main Heading</h1>
-    <p>Paragraph 1</p>
-    <a href="https://www.google.com/">Google</a>
-    <a href="https://www.google.com/doodles">Google Doodles</a>
-    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
-    <div id="first-div">
-        <h2>Subheading</h2>
-        <p>Paragraph 2</p>
-        <p>Paragraph 3</p>
-        <div id="second-div">
-            <h3>Sub subheading</h3>
-            <p>Paragraph 4</p>
-            <p>Paragraph 5</p>
-            <p>Paragraph 6</p>
-            <p>Paragraph 7</p>
-            <p>Paragraph 8</p>
+<header class="p-3">
+    <div class="container-fluid justify-content-around">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="my-3">My Website</h2>
+
+            </div>
+            <div class="d-none d-xl-block col-xl-6 text-right">
+                <a class="text-decoration-none text-dark" href="#">Home</a>
+                <a class="text-decoration-none text-dark" href="#">Portfolio</a>
+                <a class="text-decoration-none text-dark" href="#">Staff</a>
+                <a class="text-decoration-none text-dark" href="#">Features</a>
+                <a class="text-decoration-none text-dark" href="#">Blog</a>
+                <a class="text-decoration-none text-dark" href="#">Contact</a>
+                <a class="text-decoration-none text-dark" href="#">Download</a>
+            </div>
+            <div class="col-6 d-xl-none text-right">
+                <img id="menu-icon" src="imgs/menu.png" alt="menu"> Menu</div>
         </div>
     </div>
-    <p>Paragraph 9</p>
-    <p>Paragraph 10</p>
-</body>
+</header>
 
+<section id="hero">
+<div class="container-fluid">
+    <div class="row vh-100 align-items-center pb-3">
+        <div class="col-12 text-center">
+            <img class="img-fluid" id="hero" src="imgs/hero.jpg" alt="hero image">
+            <h3 id="hero-text" class="font-weight-bold">We strive to make all of our creations exquisite.</h3>
+</div>
+</section>
+
+<section id="intro" class="py-5">
+
+    <div class="container">
+        
+        <div class="row py-1">
+            <div class="col-sm-12 col-md-12 col-xl-3 text-center">
+                <img class="img-fluid py-3" src="imgs/icon-1.png" alt="icon 1">
+                <p class="h4">Purpose</p>
+                <p>Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xl-3 text-center">
+                <img class="img-fluid py-3" src="imgs/icon-2.png" alt="icon 2">
+                <p class="h4">Quality</p>
+                <p>Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xl-3 text-center">
+                <img class="img-fluid py-3" src="imgs/icon-3.png" alt="icon 3">
+                <p class="h4">Function</p> 
+                <p>Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xl-3 text-center">
+                <img class="img-fluid py-3" src="imgs/icon-4.png" alt="icon 4">
+                <p class="h4">Elegant</p> 
+                <p>Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+            </div>
+    
+        </div>
+    </div>
+    </section>
+
+    <section id="menu">
+
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-12 text-left py-5">
+                <h1>RECENT WORK</h1>
+                <hr>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-3 p-2 text-left">
+                    <img class="img-fluid" src="imgs/bike-400x340.jpg" alt="picture 1">
+                    <h5 class="my-2">Green Bike</h2>
+                    <p class="lead my-1">Beautiful, Travel</p>
+                
+    
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-2 text-left">
+                    <img class="img-fluid" src="imgs/surf-400x340.jpg" alt="picture 2">
+                    <h5 class="my-2">Salt Of The Earth</h2>
+                    <p class="lead my-1">Beautiful, Travel</p>
+                
+    
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-2 text-left">
+                    <img class="img-fluid" src="imgs/hills-400x340.jpg" alt="picture 3">
+                    <h5 class="my-2">Mountain High</h2>
+                    <p class="lead my-1">Travel</p>
+                
+    
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-2 text-left">
+                    <img class="img-fluid" src="imgs/path-400x340.jpg" alt="picture 4">
+                    <h5 class="my-2">When A Tree Falls</h2>
+                    <p class="lead my-1">Beautiful</p>
+                
+            </div>
+            <div class="row my-3">
+                <div class="col-12 text-left py-5">
+                <h1>FROM THE BLOG</h1>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-4 my-2 text-left">
+                    <img class="img-fluid" src="imgs/cow-640x340.jpg" alt="picture 1">
+                    <h5 class="my-2">How Now</h2>
+                        <p class="lead my-1">Posted on Date</p>
+                    <p>Proin et ligula laoreet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoreet. Integer egestas...</p>
+                
+    
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-4 my-2 text-left">
+                    <img class="img-fluid" src="imgs/sunrise-640x340.jpg" alt="picture 2">
+                    <h5 class="my-2">Adrift by Simon Christen</h2>
+                        <p class="lead my-1">Posted on Date</p>
+                        <p>Proin et ligula laoreet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoreet. Integer egestas...</p>                
+    
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-4 my-2 text-left">
+                    <img class="img-fluid" src="imgs/grass-640x340.jpg" alt="picture 3">
+                    <h5 class="my-2">A Walk In The Park</h2>
+                        <p class="lead my-1">Posted on Date</p>
+                        <p>Proin et ligula laoreet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoreet. Integer egestas...</p>                
+                </div>
+
+        </div>
+        </div>
+    
+    </section>
+
+    <section id="footer-menu">
+
+        <div class="container-fluid text-light" id="footer-menu">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-4 p-5">
+                    <h4>My Website</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam voluptate illum odio corporis sequi delectus, ut
+                        officiis debitis assumenda, cumque, eveniet est veniam minima
+                        hic magnam? Dolor ratione omnis quia? Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Laborum soluta voluptates
+                        optio earum repudiandae distinctio labore aperiam facere eum
+                        dolorem at, eos itaque consectetur voluptatibus animi temporibus.
+                        Alias, asperiores suscipit?</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-4 p-5">
+                    <h4>Recent Posts</h2>
+                    <hr>
+                    <h5>How Now</h4>
+                    <hr>
+                    <h5>Adrift by Simon Christen</h4>
+                    <hr>
+                    <h5>A Walk In The Park</h4>
+                    <hr>
+                    <h5>Time To Think</h4>
+                    <hr>
+                    <h5>A Field Of Dreams</h4>
+        
+                </div>
+                <div class="col-sm-12 col-md-12 col-xl-4 p-5">
+                    <h4>Recent Work</h2>
+                    <hr>
+                    <h5>Beautiful</h4>
+                    <hr>
+                    <h5>Travel</h4>
+                    <hr>
+                    <h5>Surreal</h4>
+                    <hr>
+                    <h5>Thoughts</h4>
+                    <hr>
+                    <h5>Unique</h4>
+        
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="container-fluid text-light py-3">
+            <div class="row justify-content-center">
+                <div class="col-sm-11 offset-sm-1 col-md-11 offset-md-1 col-xl-12 align-self-center">
+                    @ 2020 IT Academy
+                </div>
+            </div>
+        </div>
+        </footer>
+
+
+<script src="js/jquery-3.7.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
